@@ -162,6 +162,7 @@ header {
     border-radius: 10px;
 }
 .item-b p {
+    
     position: relative;
     left: 10px;
 }
@@ -178,6 +179,7 @@ header {
     border-radius: 10px;
 }
 .item-c p {
+    width: auto;
     position: relative;
     left: 10px;
 }
@@ -264,12 +266,12 @@ footer {
         grid-gap: 10px;
         max-width: 100%;
         margin: auto;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
-        "header" 
-        "item-a" 
+        "header"
         "item-b" 
+        "item-a"  
         "item-c" 
         "item-d"
         "item-e" 
