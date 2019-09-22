@@ -96,8 +96,8 @@ section {
 body {
     line-height: 1;
     background-color: rgb(234, 228, 255);
-    font-family: Geneva, Arial, Helvetica, sans-serif;
- 
+    font-family: "Helvetica", "Arial", sans-serif;
+
 }
 
 blockquote,
@@ -160,11 +160,13 @@ header {
     padding: 10px 0px 10px 0px;
     min-height: 25px;
     grid-area: item-b;
+    font-weight: 700;
     background-color: #9303A7;
     border-radius: 10px;
 }
+
 .item-b p {
-    
+
     position: relative;
     left: 10px;
 }
@@ -180,12 +182,14 @@ header {
     background-color: rgb(116, 116, 163);
     border-radius: 10px;
 }
+
 .item-c p {
     width: auto;
     position: relative;
     left: 10px;
 }
-.item-d  {
+
+.item-d {
     display: grid;
     width: 100%;
     align-items: center;
@@ -196,21 +200,29 @@ header {
     background-color: rgb(116, 116, 163);
     border-radius: 10px;
 }
-.item-d h3, p {
+
+.item-d h3,
+p {
     position: relative;
     left: 10px;
     width: 95%;
 }
+
 h3 {
     position: relative;
     left: 10px;
     width: 95%;
     margin: 0px;
-    padding: 0px 0px 10px 0px; 
+    padding: 0px 0px 10px 0px;
 }
-.item-d, .item-g, .item-i, .item-j p {
+
+.item-d,
+.item-g,
+.item-i,
+.item-j p {
     text-align: justify;
 }
+
 .item-d h3 {
     margin: 0 0 5px 0;
     padding: 0px;
@@ -228,6 +240,7 @@ h3 {
     background-color: rgb(116, 116, 163);
     border-radius: 10px;
 }
+
 .item-f {
     display: grid;
     width: 100%;
@@ -240,11 +253,7 @@ h3 {
     border-radius: 10px;
 }
 
-
-
-
-
-.item-g  {
+.item-g {
     display: grid;
     width: 100%;
     align-items: center;
@@ -255,18 +264,23 @@ h3 {
     background-color: rgb(116, 116, 163);
     border-radius: 10px;
 }
-.item-g h3, p {
+
+.item-g h3,
+p {
     position: relative;
     left: 10px;
     width: 95%;
 }
+
 .item-g p {
     margin: 0px 10px 0px 0px;
 }
+
 .item-g h3 {
     margin: 0px 0px 5px 0px;
     padding: 0px;
 }
+
 .item-h {
     display: grid;
     width: 100%;
@@ -278,11 +292,13 @@ h3 {
     background-color: rgb(116, 116, 163);
     border-radius: 10px;
 }
+
 .item-h img {
     width: 95%;
     height: 95%;
     object-fit: cover;
 }
+
 .item-i {
     display: grid;
     width: 100%;
@@ -294,7 +310,8 @@ h3 {
     background-color: rgb(116, 116, 163);
     border-radius: 10px;
 }
-.item-j  {
+
+.item-j {
     display: grid;
     width: 100%;
     align-items: center;
@@ -305,7 +322,9 @@ h3 {
     background-color: rgb(116, 116, 163);
     border-radius: 10px;
 }
-.item-j h3, p {
+
+.item-j h3,
+p {
     position: relative;
     left: 10px;
     width: 95%;
@@ -322,13 +341,14 @@ footer {
     background-color: #00BD39;
     border-radius: 10px;
 }
-  
-@media screen and (max-width: 320px)  {
-    
+
+@media screen and (max-width: 320px) {
+
 
     h1 {
         font-size: 30px;
     }
+
     .item-a {
         display: grid;
         width: 100%;
@@ -340,7 +360,7 @@ footer {
         background-color: #60016D;
         border-radius: 10px;
     }
-    
+
     .item-a img {
         width: 250px;
         border-radius: 10px;
@@ -348,12 +368,13 @@ footer {
         -moz-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
         box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
     }
+
     .item-h img {
         position: relative !impotant;
-        left: 10px ;
+        left: 10px;
         width: 100%;
         height: 400px;
-        }
+    }
 
     .container {
         display: grid;
@@ -362,23 +383,24 @@ footer {
         grid-gap: 10px;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-template-areas: 
-        "header"
-        "item-b" 
-        "item-a"  
-        "item-c" 
-        "item-d"
-        "item-e"
-        "item-f"
-        "item-g"
-        "item-h"
-        "item-i"
-        "item-j"
-        "footer";
+        grid-template-areas:
+            "header"
+            "item-b"
+            "item-a"
+            "item-c"
+            "item-d"
+            "item-e"
+            "item-f"
+            "item-g"
+            "item-h"
+            "item-i"
+            "item-j"
+            "footer";
     }
 }
-@media screen and (min-width: 320px)  {
-    
+
+@media screen and (min-width: 320px) {
+
 
     h1 {
         font-size: 30px;
@@ -386,10 +408,10 @@ footer {
 
     .item-h img {
         position: relative !impotant;
-        left: 10px ;
+        left: 10px;
         width: 100%;
         height: 400px;
-        }
+    }
 
     .container {
         display: grid;
@@ -398,25 +420,28 @@ footer {
         grid-gap: 10px;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-template-areas: 
-        "header"
-        "item-b" 
-        "item-a"  
-        "item-c" 
-        "item-d"
-        "item-e"
-        "item-f"
-        "item-g"
-        "item-h"
-        "item-i"
-        "item-j"
-        "footer";
+        grid-template-areas:
+            "header"
+            "item-b"
+            "item-a"
+            "item-c"
+            "item-d"
+            "item-e"
+            "item-f"
+            "item-g"
+            "item-h"
+            "item-i"
+            "item-j"
+            "footer";
     }
 }
-@media screen and (min-width: 600px)  {
+
+@media screen and (min-width: 600px) {
     .item-h img {
         width: 100%;
-        height: 600px;}
+        height: 600px;
+    }
+
     .container {
         display: grid;
         grid-gap: 10px;
@@ -424,20 +449,21 @@ footer {
         margin: auto;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
-        grid-template-areas: 
-        "header header header header header header" 
-        "item-a item-a item-a item-b item-b item-b" 
-        "item-a item-a item-a item-c item-c item-c"
-        "item-a item-a item-a . . ." 
-        "item-d item-d item-d item-d item-d item-d" 
-        "item-e item-e item-f item-f item-g item-g"
-        "item-h item-h item-h item-h item-h item-h"
-        "item-i item-i item-i item-i item-i item-i"
-        "item-j item-j item-j item-j item-j item-j"
-        "footer footer footer footer footer footer";
+        grid-template-areas:
+            "header header header header header header"
+            "item-a item-a item-a item-b item-b item-b"
+            "item-a item-a item-a item-c item-c item-c"
+            "item-a item-a item-a . . ."
+            "item-d item-d item-d item-d item-d item-d"
+            "item-e item-e item-f item-f item-g item-g"
+            "item-h item-h item-h item-h item-h item-h"
+            "item-i item-i item-i item-i item-i item-i"
+            "item-j item-j item-j item-j item-j item-j"
+            "footer footer footer footer footer footer";
     }
 }
-@media screen and (min-width: 800px)  {
+
+@media screen and (min-width: 800px) {
     .container {
         display: grid;
         grid-gap: 10px;
@@ -445,15 +471,15 @@ footer {
         margin: auto;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
-        grid-template-areas: 
-        "header header header header header header" 
-        "item-a item-a item-b item-b item-b item-b" 
-        "item-a item-a item-c item-c item-c item-c" 
-        "item-a item-a item-d item-d item-d item-d" 
-        "item-e item-e item-f item-f item-g item-g"
-        "item-h item-h item-h item-h item-h item-h"
-        "item-i item-i item-i item-i item-i item-i"
-        "item-j item-j item-j item-j item-j item-j"
-        "footer footer footer footer footer footer";
+        grid-template-areas:
+            "header header header header header header"
+            "item-a item-a item-b item-b item-b item-b"
+            "item-a item-a item-c item-c item-c item-c"
+            "item-a item-a item-d item-d item-d item-d"
+            "item-e item-e item-f item-f item-g item-g"
+            "item-h item-h item-h item-h item-h item-h"
+            "item-i item-i item-i item-i item-i item-i"
+            "item-j item-j item-j item-j item-j item-j"
+            "footer footer footer footer footer footer";
     }
 }
