@@ -115,10 +115,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-/*     
+
 header {
     display: grid;
-    width: 100%;
     align-items: center;
     grid-area: header;
     text-align: center;
@@ -141,6 +140,11 @@ header {
 }
 
 .item-a img {
+    position: relative;
+    left: 10px;
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
@@ -217,7 +221,7 @@ footer {
     border-radius: 10px;
 }
 
-.container {
+/* .container {
     display: grid;
     grid-gap: 10px;
     max-width: 1024px;
@@ -232,20 +236,8 @@ footer {
         "item-e item-e item-e item-e item-e item-e" 
         "footer footer footer footer footer footer";
 } */
-
-@media screen and (min-width: 480px) {
-    header {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        grid-area: header;
-        text-align: center;
-        font-size: 40px;
-        min-height: 70px;
-        background-color: #00BD39;
-        border-radius: 10px;
-    }
-    
+  
+@media screen and (max-width: 320px)  {
     .item-a {
         display: grid;
         width: 100%;
@@ -259,321 +251,48 @@ footer {
     }
     
     .item-a img {
+        width: 250px;
         border-radius: 10px;
         -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
         -moz-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
         box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
     }
-    
-    .item-b {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        justify-content: left;
-        padding: 10px 0px 10px 0px;
-        min-height: 25px;
-        grid-area: item-b;
-        background-color: #9303A7;
-        border-radius: 10px;
-    }
-    .item-b p {
-        position: relative;
-        left: 10px;
-    }
-    
-    .item-c {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        justify-content: left;
-        padding: 10px 0px 10px 0px;
-        min-height: 25px;
-        grid-area: item-c;
-        background-color: rgb(116, 116, 163);
-        border-radius: 10px;
-    }
-    .item-c p {
-        position: relative;
-        left: 10px;
-    }
-    .item-d {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        justify-content: left;
-        padding: 10px 0px 10px 0px;
-        min-height: 100px;
-        grid-area: item-d;
-        background-color: rgb(116, 116, 163);
-        border-radius: 10px;
-    }
-    .item-d h3, p {
-        position: relative;
-        left: 10px;
-        width: 95%;
-    }
-    .item-d p {
-        text-align: justify;
-    }
-    .item-d h3 {
-        margin: 0 0 5px 0;
-        padding: 0px;
-    }
-
-    
-    .item-e {
-        min-height: 100px;
-        grid-area: item-e;
-        background-color: rgb(148, 148, 199);
-        border-radius: 10px;
-    }
-    
-    footer {
-        min-height: 100px;
-        grid-area: footer;
-        background-color: #60016D;
-        border-radius: 10px;
-    }
-    
     .container {
         display: grid;
         grid-gap: 10px;
-        max-width: 1024px;
+        max-width: 100%;
         margin: auto;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
-            "header header header header header header" 
-            "item-a item-a item-a item-a item-a item-a" 
-            "item-b item-b item-b item-b item-b item-b" 
-            "item-c item-c item-c item-c item-c item-c" 
-            "item-d item-d item-d item-d item-d item-d"
-            "item-e item-e item-e item-e item-e item-e" 
-            "footer footer footer footer footer footer";
+        "header" 
+        "item-a" 
+        "item-b" 
+        "item-c" 
+        "item-d"
+        "item-e" 
+        "footer";
     }
-  }
-  @media screen and (max-width: 480px) {
-    header {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        grid-area: header;
-        text-align: center;
-        font-size: 40px;
-        min-height: 70px;
-        background-color: #00BD39;
-        border-radius: 10px;
-    }
-    
-    .item-a {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 0px 10px 0px;
-        min-height: 325px;
-        grid-area: item-a;
-        background-color: #60016D;
-        border-radius: 10px;
-    }
-    
-    .item-a img {
-        border-radius: 10px;
-        -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
-        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
-    }
-    
-    .item-b {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        justify-content: left;
-        padding: 10px 0px 10px 0px;
-        min-height: 25px;
-        grid-area: item-b;
-        background-color: #9303A7;
-        border-radius: 10px;
-    }
-    .item-b p {
-        position: relative;
-        left: 10px;
-    }
-    
-    .item-c {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        justify-content: left;
-        padding: 10px 0px 10px 0px;
-        min-height: 25px;
-        grid-area: item-c;
-        background-color: rgb(116, 116, 163);
-        border-radius: 10px;
-    }
-    .item-c p {
-        position: relative;
-        left: 10px;
-    }
-    .item-d {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        justify-content: left;
-        padding: 10px 0px 10px 0px;
-        min-height: 100px;
-        grid-area: item-d;
-        background-color: rgb(116, 116, 163);
-        border-radius: 10px;
-    }
-    .item-d h3, p {
-        position: relative;
-        left: 10px;
-        width: 95%;
-    }
-    .item-d p {
-        text-align: justify;
-    }
-    .item-d h3 {
-        margin: 0 0 5px 0;
-        padding: 0px;
-    }
-
-    
-    .item-e {
-        min-height: 100px;
-        grid-area: item-e;
-        background-color: rgb(148, 148, 199);
-        border-radius: 10px;
-    }
-    
-    footer {
-        min-height: 100px;
-        grid-area: footer;
-        background-color: #60016D;
-        border-radius: 10px;
-    }
-    
+}
+@media screen and (min-width: 600px)  {
     .container {
         display: grid;
         grid-gap: 10px;
-        max-width: 1024px;
+        max-width: 100%;
         margin: auto;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
-            "header header header header header header" 
-            "item-a item-a item-a item-a item-a item-a" 
-            "item-b item-b item-b item-b item-b item-b" 
-            "item-c item-c item-c item-c item-c item-c" 
-            "item-d item-d item-d item-d item-d item-d"
-            "item-e item-e item-e item-e item-e item-e" 
-            "footer footer footer footer footer footer";
+        "header header header header header header" 
+        "item-a item-a item-a item-b item-b item-b" 
+        "item-a item-a item-a item-c item-c item-c"
+        "item-a item-a item-a . . ." 
+        "item-d item-d item-d item-d item-d item-d" 
+        "item-e item-e item-e item-e item-e item-e" 
+        "footer footer footer footer footer footer";
     }
-  }
-
-  @media screen and (min-width: 100px) {
-    header {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        grid-area: header;
-        text-align: center;
-        font-size: 40px;
-        min-height: 70px;
-        background-color: #00BD39;
-        border-radius: 10px;
-    }
-    
-    .item-a {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 0px 10px 0px;
-        min-height: 325px;
-        grid-area: item-a;
-        background-color: #60016D;
-        border-radius: 10px;
-    }
-    
-    .item-a img {
-        border-radius: 10px;
-        -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
-        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
-    }
-    
-    .item-b {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        justify-content: left;
-        padding: 10px 0px 10px 0px;
-        min-height: 25px;
-        grid-area: item-b;
-        background-color: #9303A7;
-        border-radius: 10px;
-    }
-    .item-b p {
-        position: relative;
-        left: 10px;
-    }
-    
-    .item-c {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        justify-content: left;
-        padding: 10px 0px 10px 0px;
-        min-height: 25px;
-        grid-area: item-c;
-        background-color: rgb(116, 116, 163);
-        border-radius: 10px;
-    }
-    .item-c p {
-        position: relative;
-        left: 10px;
-    }
-    .item-d {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        justify-content: left;
-        padding: 10px 0px 10px 0px;
-        min-height: 100px;
-        grid-area: item-d;
-        background-color: rgb(116, 116, 163);
-        border-radius: 10px;
-    }
-    .item-d h3, p {
-        position: relative;
-        left: 10px;
-        width: 95%;
-    }
-    .item-d p {
-        text-align: justify;
-    }
-    .item-d h3 {
-        margin: 0 0 5px 0;
-        padding: 0px;
-    }
-
-    
-    .item-e {
-        min-height: 100px;
-        grid-area: item-e;
-        background-color: rgb(148, 148, 199);
-        border-radius: 10px;
-    }
-    
-    footer {
-        min-height: 100px;
-        grid-area: footer;
-        background-color: #60016D;
-        border-radius: 10px;
-    }
-    
+}
+@media screen and (min-width: 800px)  {
     .container {
         display: grid;
         grid-gap: 10px;
@@ -589,5 +308,4 @@ footer {
         "item-e item-e item-e item-e item-e item-e" 
         "footer footer footer footer footer footer";
     }
-  }
-   
+}
