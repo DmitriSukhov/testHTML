@@ -121,7 +121,6 @@ header {
     align-items: center;
     grid-area: header;
     text-align: center;
-    font-size: 40px;
     min-height: 70px;
     background-color: #00BD39;
     border-radius: 10px;
@@ -238,6 +237,9 @@ footer {
 } */
   
 @media screen and (max-width: 320px)  {
+    h1 {
+        font-size: 30px;
+    }
     .item-a {
         display: grid;
         width: 100%;
